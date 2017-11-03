@@ -1,0 +1,6 @@
+com\mdc\hessian\IBookService.class
+com\mdc\hessian\Book.class
+com\mdc\service\IDemoService.class
+com\mdc\controller\IndexController.class
+com\mdc\hessian\BookServiceImpl.class
+com\mdc\service\impl\DemoServiceImpl.class

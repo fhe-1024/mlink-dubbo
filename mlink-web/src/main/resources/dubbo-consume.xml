@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<dubbo:application name="democonsumer" />
+	<dubbo:registry address="zookeeper://192.168.192.129:2181" />
+	<dubbo:reference id="cityService" interface="com.mlink.service.ICityService" />
+	<dubbo:reference id="consultService" interface="com.mlink.service.IConsultService" />
+	<dubbo:reference id="countryService" interface="com.mlink.service.ICountryService" />
+	<dubbo:reference id="exchangeService"
+		interface="com.mlink.service.IExchangeService" />
+	<dubbo:reference id="facilityService"
+		interface="com.mlink.service.IFacilityService" />
+	<dubbo:reference id="internationalService"
+		interface="com.mlink.service.IInternationalService" />
+	<dubbo:reference id="lineService" interface="com.mlink.service.ILineService" />
+	<dubbo:reference id="nodeService" interface="com.mlink.service.INodeService" />
+	<dubbo:reference id="singleService" interface="com.mlink.service.ISingleService" />
+	<dubbo:reference id="tipService" interface="com.mlink.service.ITipService" />
+
+
+
+</beans>

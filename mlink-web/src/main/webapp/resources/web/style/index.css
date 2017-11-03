@@ -1,0 +1,221 @@
+@charset "utf-8";
+.banner {
+	display: block;
+	background-color: #14345F;
+	height: 540px;
+	position: relative;
+	width: 100%;
+}
+.bannerlist {
+	display: block;
+	position: relative;
+}
+
+.bannerblock {
+	display: none;
+	height: 540px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+.bannerblockcontent {
+	position: relative;
+	height: 540px;
+	width: 100%;
+}
+
+
+.bannertext {
+	color: #A1D0FF;
+	font-size: 46px;
+	margin-left: 80px;
+	position: absolute;
+	left: 30px;
+	top: 230px;
+	font-weight: 400;
+}
+.bannerblock.bannerpic01 {
+	background-image: url(../images/bannerpic01.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.bannerblock.bannerpic02 {
+	background-image: url(../images/bannerpic02.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.bannerblock.bannerpic03 {
+	background-image: url(../images/bannerpic03.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.intrtext {
+	position: absolute;
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	left: 0px;
+	bottom: 0px;
+	display: block;
+	font-size: 14px;
+	line-height: 60px;
+	background-color: rgba(0,0,0,0.2);
+}
+.bannerdot {
+	position: absolute;
+	left: 50%;
+	bottom: 75px;
+	overflow: hidden;
+	margin-left: -39px;
+}
+.bannerdotblock {
+	background-color: #ffffff;
+	height: 3px;
+	width: 20px;
+	float: left;
+	margin-right: 3px;
+	margin-left: 3px;
+	cursor: pointer;
+}
+.bannerdotblock.active {
+	background-color: #ffffff;
+	height: 3px;
+	width: 20px;
+	float: left;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.businesstype {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.pagewidth h1 {
+	font-size: 26px;
+	text-align: center;
+	display: block;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.businesstypelist_b_p {
+	float: left;
+	height: 70px;
+	width: 70px;
+	margin-right: 20px;
+}
+.b_b_p_icon01{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -18px;
+	}
+.b_b_p_icon02{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -118px;
+	}
+.b_b_p_icon03{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -218px;
+	}
+.b_b_p_icon04{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -318px;
+	}
+.b_b_p_icon05{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -418px;
+	}
+.b_b_p_icon06{
+	background-image: url(../images/typeicon.png);
+	background-repeat: no-repeat;
+	background-position: center -518px;
+	}				
+
+.businesstypelist_b {
+	display: block;
+	float: left;
+	width: 320px;
+	padding: 10px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.businesstypelist_b.add_w {
+	width: 420px;
+}
+
+.businesstypelist_b_t h3 {
+	display: block;
+	font-size: 15px;
+}
+.businesstypelist_b_t_list {
+	display: block;
+	margin-top: 5px;
+	font-size: 14px;
+}
+.businesstypelist_b_t_list em {
+	font-style: normal;
+	margin-right: 20px;
+	display: block;
+	float: left;
+	color: #333333;
+}
+.index_advantage {
+	background-image: url(../images/ttbg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.index_advantage_list {
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.index_advantage_list_b {
+	width: 280px;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+.index_advantage_list_b h3 {
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+
+.index_a_l_b_icon {
+	background-image: url(../images/index_advantage_icon.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 80px;
+	width: 80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.index_a_l_b_icon01{background-position: left center;}
+.index_a_l_b_icon02{background-position: -295px center;}
+.index_a_l_b_icon03{background-position: -592px center;}
+.index_a_l_b_icon04{background-position: -888px center;}
+.index_a_l_b_t {
+	font-size: 14px;
+	line-height: 150%;
+	color: #333333;
+	margin-top: 5px;
+}

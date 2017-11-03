@@ -1,0 +1,60 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+            http://java.sun.com/xml/ns/javaee
+            http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<display-name>mlink</display-name>
+	<welcome-file-list>
+		<welcome-file>/index</welcome-file>
+		<welcome-file>/</welcome-file>
+	</welcome-file-list>
+
+
+	<error-page>
+		<location>/error</location>
+	</error-page>
+
+
+	<servlet>
+		<servlet-name>mlink</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath*:mlink-servlet.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mlink</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<filter>
+		<filter-name>ManageFilter</filter-name>
+		<filter-class>com.mlink.filter.ManageFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>ManageFilter</filter-name>
+		<url-pattern>/manage</url-pattern>
+	</filter-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>/WEB-INF/jsp/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>jsp</servlet-name>
+		<servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+	</servlet>
+
+
+
+</web-app>
